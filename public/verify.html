@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verification</title>
+</head>
+<body>
+    <h1>Verification</h1>
+    <form action="/verify" method="post">
+        <input type="hidden" name="email" value="{{email}}">
+        <label for="code">Enter verification code:</label>
+        <input type="text" id="code" name="code" required>
+        <button type="submit">Verify</button>
+    </form>
+</body>
+</html>
